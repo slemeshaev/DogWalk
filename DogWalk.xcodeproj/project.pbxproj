@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		6638771127B2C0AC000846B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638771027B2C0AC000846B6 /* AppDelegate.swift */; };
 		6638771327B2C0AC000846B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638771227B2C0AC000846B6 /* SceneDelegate.swift */; };
-		6638771527B2C0AC000846B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638771427B2C0AC000846B6 /* ViewController.swift */; };
-		6638771827B2C0AC000846B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638771627B2C0AC000846B6 /* Main.storyboard */; };
 		6638771A27B2C0AE000846B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6638771927B2C0AE000846B6 /* Assets.xcassets */; };
 		6638771D27B2C0AE000846B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */; };
+		6638772527B2C14D000846B6 /* DogWalkView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638772427B2C14D000846B6 /* DogWalkView.storyboard */; };
+		6638772727B2C175000846B6 /* DogWalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638772627B2C175000846B6 /* DogWalkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6638770D27B2C0AC000846B6 /* DogWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6638771027B2C0AC000846B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6638771227B2C0AC000846B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6638771427B2C0AC000846B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6638771727B2C0AC000846B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6638771927B2C0AE000846B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6638771C27B2C0AE000846B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6638771E27B2C0AE000846B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6638772427B2C14D000846B6 /* DogWalkView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogWalkView.storyboard; sourceTree = "<group>"; };
+		6638772627B2C175000846B6 /* DogWalkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		6638770F27B2C0AC000846B6 /* DogWalk */ = {
 			isa = PBXGroup;
 			children = (
-				6638771027B2C0AC000846B6 /* AppDelegate.swift */,
-				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
-				6638771427B2C0AC000846B6 /* ViewController.swift */,
-				6638771627B2C0AC000846B6 /* Main.storyboard */,
-				6638771927B2C0AE000846B6 /* Assets.xcassets */,
-				6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */,
-				6638771E27B2C0AE000846B6 /* Info.plist */,
+				6638772A27B2C2DD000846B6 /* Screens */,
+				6638772B27B2C2EC000846B6 /* Utilities */,
 			);
 			path = DogWalk;
+			sourceTree = "<group>";
+		};
+		6638772A27B2C2DD000846B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6638772D27B2C313000846B6 /* Launch */,
+				6638772C27B2C305000846B6 /* DogWalk */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6638772B27B2C2EC000846B6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6638771027B2C0AC000846B6 /* AppDelegate.swift */,
+				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
+				6638771927B2C0AE000846B6 /* Assets.xcassets */,
+				6638771E27B2C0AE000846B6 /* Info.plist */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6638772C27B2C305000846B6 /* DogWalk */ = {
+			isa = PBXGroup;
+			children = (
+				6638772427B2C14D000846B6 /* DogWalkView.storyboard */,
+				6638772627B2C175000846B6 /* DogWalkController.swift */,
+			);
+			path = DogWalk;
+			sourceTree = "<group>";
+		};
+		6638772D27B2C313000846B6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +128,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = slemeshaev;
 				TargetAttributes = {
 					6638770C27B2C0AC000846B6 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6638772527B2C14D000846B6 /* DogWalkView.storyboard in Resources */,
 				6638771D27B2C0AE000846B6 /* LaunchScreen.storyboard in Resources */,
 				6638771A27B2C0AE000846B6 /* Assets.xcassets in Resources */,
-				6638771827B2C0AC000846B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6638771527B2C0AC000846B6 /* ViewController.swift in Sources */,
 				6638771127B2C0AC000846B6 /* AppDelegate.swift in Sources */,
+				6638772727B2C175000846B6 /* DogWalkController.swift in Sources */,
 				6638771327B2C0AC000846B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +180,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6638771627B2C0AC000846B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6638771727B2C0AC000846B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,12 +316,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DogWalk/Info.plist;
+				INFOPLIST_FILE = DogWalk/Utilities/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dog Walk";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = DogWalkView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,12 +346,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DogWalk/Info.plist;
+				INFOPLIST_FILE = DogWalk/Utilities/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dog Walk";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = DogWalkView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
