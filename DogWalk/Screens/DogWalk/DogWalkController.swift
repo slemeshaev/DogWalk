@@ -9,13 +9,13 @@
 import UIKit
 
 class DogWalkController: UIViewController {
+    // MARK: - Properties
+    @IBOutlet private var tableView: UITableView!
     
     private let identifier = "Cell"
     
-    // MARK: - IBOutlets
-    @IBOutlet private var tableView: UITableView!
+    private var walks: [Date] = []
     
-    // MARK: - Properties
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -23,21 +23,18 @@ class DogWalkController: UIViewController {
         return formatter
     }()
     
-    private var walks: [Date] = []
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
-    // MARK: - IBActions
-    @IBAction func addWalk(_ sender: UIBarButtonItem) {
+    // MARK: - Private
+    @IBAction private func addWalk(_ sender: UIBarButtonItem) {
         walks.append(Date())
         tableView.reloadData()
     }
     
-    // MARK: - Private
     private func configureUI() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
     }
@@ -45,7 +42,6 @@ class DogWalkController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension DogWalkController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return walks.count
     }
