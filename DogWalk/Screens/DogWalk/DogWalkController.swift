@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DogWalkController: UIViewController {
     // MARK: - Properties
@@ -23,18 +24,21 @@ class DogWalkController: UIViewController {
         return formatter
     }()
     
+    private lazy var coreDataStack = CoreDataStack(modelName: "DogWalk")
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
-    // MARK: - Private
+    // MARK: - IBActions
     @IBAction private func addWalk(_ sender: UIBarButtonItem) {
         walks.append(Date())
         tableView.reloadData()
     }
     
+    // MARK: - Private
     private func configureUI() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
     }
