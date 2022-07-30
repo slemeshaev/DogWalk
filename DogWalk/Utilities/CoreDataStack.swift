@@ -35,7 +35,9 @@ final class CoreDataStack {
     
     // MARK: - Interface
     func saveContext() {
-        guard managedContext.hasChanges else { return }
+        guard managedContext.hasChanges else {
+            return
+        }
         
         do {
             try managedContext.save()

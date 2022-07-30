@@ -10,10 +10,10 @@ import UIKit
 import CoreData
 
 class DogWalkController: UIViewController {
+    private let identifier = "Cell"
+    
     // MARK: - Properties
     @IBOutlet private var tableView: UITableView!
-    
-    private let identifier = "Cell"
     
     private var walks: [Date] = []
     

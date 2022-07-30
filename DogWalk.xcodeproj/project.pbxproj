@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6629CB61289312E900E664F3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6629CB60289312E900E664F3 /* CoreDataStack.swift */; };
+		6629CB642894637300E664F3 /* DogWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */; };
 		6638771127B2C0AC000846B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638771027B2C0AC000846B6 /* AppDelegate.swift */; };
 		6638771327B2C0AC000846B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638771227B2C0AC000846B6 /* SceneDelegate.swift */; };
 		6638771A27B2C0AE000846B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6638771927B2C0AE000846B6 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		6629CB60289312E900E664F3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6629CB632894637300E664F3 /* DogWalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogWalk.xcdatamodel; sourceTree = "<group>"; };
 		6638770D27B2C0AC000846B6 /* DogWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6638771027B2C0AC000846B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6638771227B2C0AC000846B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
 				6629CB60289312E900E664F3 /* CoreDataStack.swift */,
 				6638771927B2C0AE000846B6 /* Assets.xcassets */,
+				6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */,
 				6638771E27B2C0AE000846B6 /* Info.plist */,
 			);
 			path = Utilities;
@@ -178,6 +181,7 @@
 				6638772727B2C175000846B6 /* DogWalkController.swift in Sources */,
 				6638771327B2C0AC000846B6 /* SceneDelegate.swift in Sources */,
 				6629CB61289312E900E664F3 /* CoreDataStack.swift in Sources */,
+				6629CB642894637300E664F3 /* DogWalk.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +397,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6629CB632894637300E664F3 /* DogWalk.xcdatamodel */,
+			);
+			currentVersion = 6629CB632894637300E664F3 /* DogWalk.xcdatamodel */;
+			path = DogWalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6638770527B2C0AC000846B6 /* Project object */;
 }
