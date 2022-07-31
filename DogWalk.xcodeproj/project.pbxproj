@@ -15,6 +15,10 @@
 		6638771D27B2C0AE000846B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */; };
 		6638772527B2C14D000846B6 /* DogWalkView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638772427B2C14D000846B6 /* DogWalkView.storyboard */; };
 		6638772727B2C175000846B6 /* DogWalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638772627B2C175000846B6 /* DogWalkController.swift */; };
+		66589EA52897075C007633E1 /* Dog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66589EA12897075C007633E1 /* Dog+CoreDataClass.swift */; };
+		66589EA62897075C007633E1 /* Dog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66589EA22897075C007633E1 /* Dog+CoreDataProperties.swift */; };
+		66589EA72897075C007633E1 /* Walk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66589EA32897075C007633E1 /* Walk+CoreDataClass.swift */; };
+		66589EA82897075C007633E1 /* Walk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66589EA42897075C007633E1 /* Walk+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		6638771E27B2C0AE000846B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6638772427B2C14D000846B6 /* DogWalkView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogWalkView.storyboard; sourceTree = "<group>"; };
 		6638772627B2C175000846B6 /* DogWalkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkController.swift; sourceTree = "<group>"; };
+		66589EA12897075C007633E1 /* Dog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		66589EA22897075C007633E1 /* Dog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		66589EA32897075C007633E1 /* Walk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataClass.swift"; sourceTree = "<group>"; };
+		66589EA42897075C007633E1 /* Walk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +90,7 @@
 				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
 				6629CB60289312E900E664F3 /* CoreDataStack.swift */,
 				6638771927B2C0AE000846B6 /* Assets.xcassets */,
-				6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */,
+				66589EA9289707FC007633E1 /* CoreData */,
 				6638771E27B2C0AE000846B6 /* Info.plist */,
 			);
 			path = Utilities;
@@ -103,6 +111,18 @@
 				6638771B27B2C0AE000846B6 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		66589EA9289707FC007633E1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */,
+				66589EA12897075C007633E1 /* Dog+CoreDataClass.swift */,
+				66589EA22897075C007633E1 /* Dog+CoreDataProperties.swift */,
+				66589EA32897075C007633E1 /* Walk+CoreDataClass.swift */,
+				66589EA42897075C007633E1 /* Walk+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,11 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66589EA52897075C007633E1 /* Dog+CoreDataClass.swift in Sources */,
+				66589EA82897075C007633E1 /* Walk+CoreDataProperties.swift in Sources */,
 				6638771127B2C0AC000846B6 /* AppDelegate.swift in Sources */,
 				6638772727B2C175000846B6 /* DogWalkController.swift in Sources */,
 				6638771327B2C0AC000846B6 /* SceneDelegate.swift in Sources */,
 				6629CB61289312E900E664F3 /* CoreDataStack.swift in Sources */,
 				6629CB642894637300E664F3 /* DogWalk.xcdatamodeld in Sources */,
+				66589EA72897075C007633E1 /* Walk+CoreDataClass.swift in Sources */,
+				66589EA62897075C007633E1 /* Dog+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
