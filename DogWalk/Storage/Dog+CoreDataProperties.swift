@@ -10,9 +10,7 @@
 import Foundation
 import CoreData
 
-
 extension Dog {
-    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Dog> {
         return NSFetchRequest<Dog>(entityName: "Dog")
     }
@@ -22,9 +20,8 @@ extension Dog {
     
 }
 
-// MARK: Generated accessors for walks
+// MARK: - Generated accessors for walks
 extension Dog {
-    
     @objc(insertObject:inWalksAtIndex:)
     @NSManaged public func insertIntoWalks(_ value: Walk, at idx: Int)
     
@@ -54,9 +51,7 @@ extension Dog {
     
     @objc(removeWalks:)
     @NSManaged public func removeFromWalks(_ values: NSOrderedSet)
-    
 }
 
 extension Dog : Identifiable {
-    
 }

@@ -70,6 +70,7 @@
 			children = (
 				6638772A27B2C2DD000846B6 /* Screens */,
 				6638772B27B2C2EC000846B6 /* Utilities */,
+				66589EA9289707FC007633E1 /* Storage */,
 			);
 			path = DogWalk;
 			sourceTree = "<group>";
@@ -90,7 +91,6 @@
 				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
 				6629CB60289312E900E664F3 /* CoreDataStack.swift */,
 				6638771927B2C0AE000846B6 /* Assets.xcassets */,
-				66589EA9289707FC007633E1 /* CoreData */,
 				6638771E27B2C0AE000846B6 /* Info.plist */,
 			);
 			path = Utilities;
@@ -113,7 +113,7 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		66589EA9289707FC007633E1 /* CoreData */ = {
+		66589EA9289707FC007633E1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
 				6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */,
@@ -122,7 +122,7 @@
 				66589EA32897075C007633E1 /* Walk+CoreDataClass.swift */,
 				66589EA42897075C007633E1 /* Walk+CoreDataProperties.swift */,
 			);
-			path = CoreData;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
