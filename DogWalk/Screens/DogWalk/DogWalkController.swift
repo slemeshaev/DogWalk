@@ -85,6 +85,22 @@ extension DogWalkController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard let walkToRemove = currentDog?.walks?[indexPath.row] as? Walk,
+              editingStyle == .delete else {
+            return
+        }
+        
+        coreDataStack.managedContext.delete(walkToRemove)
+        coreDataStack.saveContext()
+        
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Time of walks"
     }
