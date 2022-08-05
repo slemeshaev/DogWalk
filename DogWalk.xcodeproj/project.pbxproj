@@ -89,7 +89,6 @@
 			children = (
 				6638771027B2C0AC000846B6 /* AppDelegate.swift */,
 				6638771227B2C0AC000846B6 /* SceneDelegate.swift */,
-				6629CB60289312E900E664F3 /* CoreDataStack.swift */,
 				6638771927B2C0AE000846B6 /* Assets.xcassets */,
 				6638771E27B2C0AE000846B6 /* Info.plist */,
 			);
@@ -116,13 +115,22 @@
 		66589EA9289707FC007633E1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				6629CB60289312E900E664F3 /* CoreDataStack.swift */,
 				6629CB622894637300E664F3 /* DogWalk.xcdatamodeld */,
+				66C84B2C289C4D6B00EAE1B9 /* NSManagedObject */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		66C84B2C289C4D6B00EAE1B9 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
 				66589EA12897075C007633E1 /* Dog+CoreDataClass.swift */,
 				66589EA22897075C007633E1 /* Dog+CoreDataProperties.swift */,
 				66589EA32897075C007633E1 /* Walk+CoreDataClass.swift */,
 				66589EA42897075C007633E1 /* Walk+CoreDataProperties.swift */,
 			);
-			path = Storage;
+			path = NSManagedObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
